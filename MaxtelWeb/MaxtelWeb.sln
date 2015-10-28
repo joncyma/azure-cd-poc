@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxtelWeb.Api", "MaxtelWeb\MaxtelWeb.Api.csproj", "{09CB6389-15D3-432C-ABD9-F0098217F009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxtelWeb.Api.Tests", "MaxtelWeb.Tests\MaxtelWeb.Api.Tests.csproj", "{6EBEF857-C6B4-448D-A51C-029BCE5D6BA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{4FEFE8DA-8294-46AA-B284-98F74323A524}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{BA64348E-4C40-492C-8367-33A5B437B7F5}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{2A1D556B-194D-465D-9DDF-14E8F998C389}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\MaxtelWeb.json = PublishScripts\Templates\MaxtelWeb.json
+		PublishScripts\Templates\MaxtelWeb.param.dev.json = PublishScripts\Templates\MaxtelWeb.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CB6389-15D3-432C-ABD9-F0098217F009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CB6389-15D3-432C-ABD9-F0098217F009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CB6389-15D3-432C-ABD9-F0098217F009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CB6389-15D3-432C-ABD9-F0098217F009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBEF857-C6B4-448D-A51C-029BCE5D6BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBEF857-C6B4-448D-A51C-029BCE5D6BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBEF857-C6B4-448D-A51C-029BCE5D6BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBEF857-C6B4-448D-A51C-029BCE5D6BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA64348E-4C40-492C-8367-33A5B437B7F5} = {4FEFE8DA-8294-46AA-B284-98F74323A524}
+		{2A1D556B-194D-465D-9DDF-14E8F998C389} = {4FEFE8DA-8294-46AA-B284-98F74323A524}
+	EndGlobalSection
+EndGlobal
